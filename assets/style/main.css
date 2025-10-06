@@ -59,7 +59,7 @@ header .marquee p {
   font-size: 3rem;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  width: 50px;
+  width: 40px;
 }
 @media print, screen and (max-width: 63.99875em) {
   .hero-block .hero-block_wrapper .couple-name span {
@@ -313,6 +313,7 @@ header .marquee p {
 @media print, screen and (max-width: 63.99875em) {
   .rule .r-col-rule {
     padding: 0 10px;
+    max-width: 290px;
   }
 }
 

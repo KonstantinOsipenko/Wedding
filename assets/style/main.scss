@@ -59,7 +59,7 @@ header {
             font-size: 3rem;
             writing-mode: vertical-rl;
             transform: rotate(180deg);
-            width: 50px;
+            width: 40px;
              @media print,screen and (max-width: 63.99875em){
                 font-size: 1.8rem;
                 display: block;
@@ -335,6 +335,7 @@ header {
     .r-col-rule {
        @media print,screen and (max-width: 63.99875em){
             padding: 0 10px;
+            max-width: 290px;
         }
     }
 }
