@@ -68,6 +68,7 @@ header .marquee p {
 @media screen and (max-width: 480px) {
   .hero-block .hero-block_wrapper img {
     width: 210px;
+    margin: 0 20px;
   }
 }
 
