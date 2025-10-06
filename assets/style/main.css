@@ -14,7 +14,7 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
-@media (min-device-width: 320px) and (max-device-width: 568px) {
+@media print, screen and (max-width: 63.99875em) {
   .container {
     max-width: unset;
   }
@@ -50,7 +50,7 @@ header .marquee p {
   margin-top: 10px;
   padding: 0 10px;
 }
-@media (min-device-width: 320px) and (max-device-width: 568px) {
+@media print, screen and (max-width: 63.99875em) {
   .hero-block .hero-block_wrapper {
     gap: 15px;
   }
@@ -60,13 +60,13 @@ header .marquee p {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
-@media only screen and (max-width: 768px) and (min-width: 320px) {
+@media print, screen and (max-width: 63.99875em) {
   .hero-block .hero-block_wrapper .couple-name span {
     font-size: 1.8rem;
     display: block;
   }
 }
-@media (min-device-width: 320px) and (max-device-width: 568px) {
+@media print, screen and (max-width: 63.99875em) {
   .hero-block .hero-block_wrapper img {
     width: 220px;
     margin: 0 5px;
@@ -79,7 +79,7 @@ header .marquee p {
   margin-top: 1rem;
   line-height: 1.6;
 }
-@media (min-device-width: 320px) and (max-device-width: 568px) {
+@media print, screen and (max-width: 63.99875em) {
   .description .description__wrap {
     padding: 0 10px;
   }
@@ -201,7 +201,7 @@ header .marquee p {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
-@media (min-device-width: 320px) and (max-device-width: 568px) {
+@media print, screen and (max-width: 63.99875em) {
   .plan .plan-title span {
     font-size: 1.8rem;
   }
@@ -266,7 +266,7 @@ header .marquee p {
   gap: 20px;
   margin-top: 10px;
 }
-@media (min-device-width: 320px) and (max-device-width: 568px) {
+@media print, screen and (max-width: 63.99875em) {
   .rule .rule-wrap {
     padding: 0 10px;
   }
@@ -276,7 +276,7 @@ header .marquee p {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
-@media (min-device-width: 320px) and (max-device-width: 568px) {
+@media print, screen and (max-width: 63.99875em) {
   .rule .rule-title span {
     font-size: 1.8rem;
     margin-top: 0;
@@ -309,7 +309,7 @@ header .marquee p {
 .rule .colors.lavender {
   background-color: #b57edc;
 }
-@media (min-device-width: 320px) and (max-device-width: 568px) {
+@media print, screen and (max-width: 63.99875em) {
   .rule .r-col-rule {
     padding: 0 10px;
   }
@@ -331,7 +331,7 @@ header .marquee p {
   width: 500px;
   margin: 0 auto;
 }
-@media (min-device-width: 320px) and (max-device-width: 568px) {
+@media print, screen and (max-width: 63.99875em) {
   .cta .love-words {
     font-size: 1.5rem;
     max-width: 300px;
@@ -360,7 +360,7 @@ header .marquee p {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
-@media (min-device-width: 320px) and (max-device-width: 568px) {
+@media print, screen and (max-width: 63.99875em) {
   .wishes h2 span {
     font-size: 1.8rem;
   }
@@ -371,7 +371,7 @@ header .marquee p {
   align-items: center;
   justify-content: center;
 }
-@media (min-device-width: 320px) and (max-device-width: 568px) {
+@media print, screen and (max-width: 63.99875em) {
   .wishes .wrapper {
     justify-content: space-around;
   }
@@ -380,7 +380,7 @@ header .marquee p {
   text-align: center;
   font-size: 1.2rem;
 }
-@media (min-device-width: 320px) and (max-device-width: 568px) {
+@media print, screen and (max-width: 63.99875em) {
   .wishes .wishes-desc {
     font-size: 1rem;
     max-width: 250px;
@@ -398,7 +398,7 @@ header .marquee p {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
-@media (min-device-width: 320px) and (max-device-width: 568px) {
+@media print, screen and (max-width: 63.99875em) {
   .contacts .l-col h2 span {
     font-size: 1.8rem;
   }
@@ -458,7 +458,7 @@ header .marquee p {
   min-width: 70px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-@media (min-device-width: 320px) and (max-device-width: 568px) {
+@media print, screen and (max-width: 63.99875em) {
   .counter #timer div {
     padding: 8px;
     min-width: 50px;
