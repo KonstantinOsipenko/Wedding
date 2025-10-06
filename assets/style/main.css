@@ -14,7 +14,7 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
-@media screen and (max-width: 560px) and (min-resolution: 192dpi) {
+@media (min-device-width: 320px) and (max-device-width: 568px) {
   .container {
     max-width: unset;
   }
@@ -48,10 +48,11 @@ header .marquee p {
   align-items: center;
   gap: 20px;
   margin-top: 10px;
+  padding: 0 10px;
 }
-@media screen and (max-width: 560px) and (min-resolution: 192dpi) {
+@media (min-device-width: 320px) and (max-device-width: 568px) {
   .hero-block .hero-block_wrapper {
-    gap: 25px;
+    gap: 15px;
   }
 }
 .hero-block .hero-block_wrapper .couple-name span {
@@ -59,21 +60,16 @@ header .marquee p {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
-@media screen and (max-width: 560px) and (min-resolution: 192dpi) {
+@media (min-device-width: 320px) and (max-device-width: 568px) {
   .hero-block .hero-block_wrapper .couple-name span {
     font-size: 2rem;
     display: block;
   }
 }
-@media screen and (max-width: 560px) and (min-resolution: 192dpi) {
+@media (min-device-width: 320px) and (max-device-width: 568px) {
   .hero-block .hero-block_wrapper img {
     width: 220px;
     margin: 0 5px;
-  }
-}
-@media screen and (max-width: 430px) and (-webkit-min-device-pixel-ratio: 2) {
-  .hero-block .hero-block_wrapper img {
-    margin-left: 10px;
   }
 }
 
@@ -83,7 +79,7 @@ header .marquee p {
   margin-top: 1rem;
   line-height: 1.6;
 }
-@media screen and (max-width: 560px) and (min-resolution: 192dpi) {
+@media (min-device-width: 320px) and (max-device-width: 568px) {
   .description .description__wrap {
     padding: 0 10px;
   }
@@ -205,7 +201,7 @@ header .marquee p {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
-@media screen and (max-width: 560px) and (min-resolution: 192dpi) {
+@media (min-device-width: 320px) and (max-device-width: 568px) {
   .plan .plan-title span {
     font-size: 1.8rem;
   }
@@ -270,7 +266,7 @@ header .marquee p {
   gap: 20px;
   margin-top: 10px;
 }
-@media screen and (max-width: 560px) and (min-resolution: 192dpi) {
+@media (min-device-width: 320px) and (max-device-width: 568px) {
   .rule .rule-wrap {
     padding: 0 10px;
   }
@@ -280,7 +276,7 @@ header .marquee p {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
-@media screen and (max-width: 560px) and (min-resolution: 192dpi) {
+@media (min-device-width: 320px) and (max-device-width: 568px) {
   .rule .rule-title span {
     font-size: 1.8rem;
     margin-top: 0;
@@ -313,7 +309,7 @@ header .marquee p {
 .rule .colors.lavender {
   background-color: #b57edc;
 }
-@media screen and (max-width: 560px) and (min-resolution: 192dpi) {
+@media (min-device-width: 320px) and (max-device-width: 568px) {
   .rule .r-col-rule {
     padding: 0 10px;
   }
@@ -335,7 +331,7 @@ header .marquee p {
   width: 500px;
   margin: 0 auto;
 }
-@media screen and (max-width: 560px) and (min-resolution: 192dpi) {
+@media (min-device-width: 320px) and (max-device-width: 568px) {
   .cta .love-words {
     font-size: 1.5rem;
     max-width: 300px;
@@ -364,7 +360,7 @@ header .marquee p {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
-@media screen and (max-width: 560px) and (min-resolution: 192dpi) {
+@media (min-device-width: 320px) and (max-device-width: 568px) {
   .wishes h2 span {
     font-size: 1.8rem;
   }
@@ -375,7 +371,7 @@ header .marquee p {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 560px) and (min-resolution: 192dpi) {
+@media (min-device-width: 320px) and (max-device-width: 568px) {
   .wishes .wrapper {
     justify-content: space-around;
   }
@@ -384,7 +380,7 @@ header .marquee p {
   text-align: center;
   font-size: 1.2rem;
 }
-@media screen and (max-width: 560px) and (min-resolution: 192dpi) {
+@media (min-device-width: 320px) and (max-device-width: 568px) {
   .wishes .wishes-desc {
     font-size: 1rem;
     max-width: 250px;
@@ -402,7 +398,7 @@ header .marquee p {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
-@media screen and (max-width: 560px) and (min-resolution: 192dpi) {
+@media (min-device-width: 320px) and (max-device-width: 568px) {
   .contacts .l-col h2 span {
     font-size: 1.8rem;
   }
@@ -462,7 +458,7 @@ header .marquee p {
   min-width: 70px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-@media screen and (max-width: 560px) and (min-resolution: 192dpi) {
+@media (min-device-width: 320px) and (max-device-width: 568px) {
   .counter #timer div {
     padding: 8px;
     min-width: 50px;
