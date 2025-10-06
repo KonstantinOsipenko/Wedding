@@ -63,6 +63,7 @@ header .marquee p {
 @media screen and (max-width: 480px) {
   .hero-block .hero-block_wrapper .couple-name span {
     font-size: 2rem;
+    display: block;
   }
 }
 @media screen and (max-width: 480px) {

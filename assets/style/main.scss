@@ -60,6 +60,7 @@ header {
             transform: rotate(180deg);
             @media screen and (max-width: 480px) {
                 font-size: 2rem;
+                display: block; 
             }
         }
         img {
