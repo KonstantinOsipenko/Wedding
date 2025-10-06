@@ -16,7 +16,6 @@ body {
 }
 @media screen and (max-width: 480px) {
   .container {
-    padding: 0 8px;
     max-width: unset;
   }
 }
@@ -78,6 +77,11 @@ header .marquee p {
   font-size: 1.2rem;
   margin-top: 1rem;
   line-height: 1.6;
+}
+@media screen and (max-width: 480px) {
+  .description .description__wrap {
+    padding: 0 10px;
+  }
 }
 
 .calendar {
@@ -298,6 +302,11 @@ header .marquee p {
 }
 .rule .colors.lavender {
   background-color: #b57edc;
+}
+@media screen and (max-width: 480px) {
+  .rule .r-col-rule {
+    padding: 0 10px;
+  }
 }
 
 .cta h2 {
