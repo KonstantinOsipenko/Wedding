@@ -71,6 +71,11 @@ header .marquee p {
     margin: 0 5px;
   }
 }
+@media screen and (max-width: 430px) and (-webkit-min-device-pixel-ratio: 2) {
+  .hero-block .hero-block_wrapper img {
+    margin-left: 10px;
+  }
+}
 
 .description {
   text-align: center;
