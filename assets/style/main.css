@@ -51,7 +51,7 @@ header .marquee p {
 }
 @media screen and (max-width: 480px) {
   .hero-block .hero-block_wrapper {
-    gap: 25px;
+    gap: 15px;
   }
 }
 .hero-block .hero-block_wrapper .couple-name span {
@@ -67,8 +67,8 @@ header .marquee p {
 }
 @media screen and (max-width: 480px) {
   .hero-block .hero-block_wrapper img {
-    width: 210px;
-    margin: 0 20px;
+    width: 220px;
+    margin: 0 5px;
   }
 }
 

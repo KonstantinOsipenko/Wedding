@@ -51,7 +51,7 @@ header {
         gap: 20px;
         margin-top: 10px;
         @media screen and (max-width: 480px) {
-            gap: 25px;
+            gap: 15px;
         }
         .couple-name span {
             font-size: 3rem;
@@ -64,8 +64,8 @@ header {
         }
         img {
             @media screen and (max-width: 480px) {
-                width: 210px;
-                margin: 0 20px;
+                width: 220px;
+                margin: 0 5px;
             }
         }
     }
