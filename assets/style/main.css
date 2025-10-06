@@ -265,6 +265,11 @@ header .marquee p {
   gap: 20px;
   margin-top: 10px;
 }
+@media screen and (max-width: 480px) {
+  .rule .rule-wrap {
+    padding: 0 10px;
+  }
+}
 .rule .rule-title span {
   font-size: 3rem;
   writing-mode: vertical-rl;
