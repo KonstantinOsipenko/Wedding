@@ -1,0 +1,508 @@
+@charset "UTF-8";
+body {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 8px;
+    max-width: unset;
+  }
+}
+
+header .wedding-date {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+header .marquee {
+  box-shadow: 0 0 3px 2px #fad6de;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+header .marquee p {
+  font-size: 2rem;
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 12s linear infinite;
+  margin: 8px 0;
+}
+
+.hero-block .hero-block_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+.hero-block .hero-block_wrapper .couple-name span {
+  font-size: 3rem;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 480px) {
+  .hero-block .hero-block_wrapper .couple-name span {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero-block .hero-block_wrapper img {
+    width: 220px;
+  }
+}
+
+.description {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+.calendar {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.calendar h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 2.5rem;
+  color: #b30059;
+  margin-bottom: 1rem;
+}
+.calendar .calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: 60px;
+  gap: 6px;
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: "Lora", serif;
+}
+@media (max-width: 480px) {
+  .calendar .calendar-grid {
+    grid-auto-rows: 50px;
+    gap: 4px;
+  }
+}
+.calendar .day-name {
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+.calendar .day {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+  position: relative;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+.calendar .day:hover {
+  background-color: #f9f9f9;
+}
+.calendar .day.heart-cell {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  border: none;
+  padding: 0;
+}
+.calendar .day.heart-cell:hover {
+  background: none;
+}
+.calendar .day.empty {
+  background: none;
+  border: none;
+}
+.calendar .heart {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: #e63946;
+  transform: rotate(-45deg);
+  animation: pulse 1.5s infinite ease-in-out;
+  z-index: 1;
+}
+.calendar .heart::before, .calendar .heart::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #e63946;
+  border-radius: 50%;
+}
+.calendar .heart::before {
+  top: -16px;
+  left: 0;
+}
+.calendar .heart::after {
+  top: 0;
+  left: 16px;
+}
+.calendar .heart-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.7rem;
+  color: #fff;
+  font-weight: bold;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.plan .dash {
+  margin-left: auto;
+}
+.plan .plan-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+.plan .plan-title span {
+  font-size: 3rem;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 480px) {
+  .plan .plan-title span {
+    font-size: 1.8rem;
+  }
+}
+.plan .plan-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  width: 300px;
+}
+.plan .plan-list li {
+  margin-top: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+.plan .plan-list li svg {
+  max-width: 30px;
+  height: auto;
+}
+
+.location .location-content {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.location__title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.location__link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 10px 15px;
+  background-color: none;
+  border: solid 1px #fad6de;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  color: #555;
+  font-weight: 600;
+  position: relative;
+}
+.location__link::after {
+  content: "→";
+  margin-left: 8px;
+}
+.location__link:hover {
+  border-color: #e63946;
+}
+
+.rule .rule-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+.rule .rule-title span {
+  font-size: 3rem;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 480px) {
+  .rule .rule-title span {
+    font-size: 1.8rem;
+    margin-top: 0;
+  }
+}
+.rule .rule-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  max-width: 500px;
+  font-weight: 600;
+}
+.rule .colors {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin: 0 5px;
+  border-radius: 50%;
+  border: 2px solid #fad6de;
+}
+.rule .colors.blue {
+  background-color: #0087f5;
+}
+.rule .colors.white {
+  background-color: #ffffff;
+}
+.rule .colors.yellow {
+  background-color: #fffacd;
+}
+.rule .colors.lavender {
+  background-color: #b57edc;
+}
+
+.cta h2 {
+  text-align: center;
+}
+.cta .love-words {
+  position: relative;
+  height: 2.5rem;
+  overflow: hidden;
+  font-size: 2rem;
+  font-family: "Great Vibes", cursive;
+  color: #b30059;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 480px) {
+  .cta .love-words {
+    font-size: 1.5rem;
+    max-width: 300px;
+  }
+}
+.cta .word {
+  position: absolute;
+  letter-spacing: 1.2px;
+  width: 100%;
+  opacity: 0;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.cta .word-1 {
+  animation-name: loveIs;
+  animation-delay: 0s;
+}
+.cta .word-2 {
+  animation-name: loveIs;
+  animation-delay: 6.5s;
+}
+
+.wishes h2 span {
+  font-size: 3rem;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 480px) {
+  .wishes h2 span {
+    font-size: 1.8rem;
+  }
+}
+.wishes .wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  .wishes .wrapper {
+    justify-content: space-around;
+  }
+}
+.wishes .wishes-desc {
+  text-align: center;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 480px) {
+  .wishes .wishes-desc {
+    font-size: 1rem;
+    max-width: 250px;
+  }
+}
+
+.contacts .wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.contacts .l-col h2 span {
+  font-size: 3rem;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 480px) {
+  .contacts .l-col h2 span {
+    font-size: 1.8rem;
+  }
+}
+.contacts .contacts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  width: 300px;
+}
+.contacts .contacts-list li {
+  margin-top: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+.contacts .contacts-list li span {
+  min-width: 80px;
+  display: inline-block;
+}
+.contacts .contacts-list li a {
+  color: #e63946;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.contacts .contacts-list li a:hover {
+  color: #b30059;
+}
+
+.counter .counter-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  text-align: center;
+}
+.counter .counter-wrap h3 {
+  margin-top: 0;
+}
+.counter #timer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.5rem;
+}
+.counter #timer div {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 15px;
+  min-width: 70px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 480px) {
+  .counter #timer div {
+    padding: 8px;
+    min-width: 50px;
+  }
+}
+.counter #timer div span {
+  display: block;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #e63946;
+  text-align: center;
+}
+.counter #timer div label {
+  font-size: 1rem;
+  color: #555;
+  text-transform: capitalize;
+  display: block;
+  text-align: center;
+}
+
+footer {
+  padding-bottom: 2rem;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1) rotate(-45deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.15) rotate(-45deg);
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(1) rotate(-45deg);
+    opacity: 1;
+  }
+}
+@keyframes loveIs {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.dash {
+  background: #fad6de;
+  width: 40%;
+  height: 2px;
+  margin-top: 2rem;
+}/*# sourceMappingURL=main.css.map */
